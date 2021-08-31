@@ -8,8 +8,6 @@ The Paywall Buster uses headless chrome and javascript to embed an image of a re
 >
 >## Is this legal?
 My site, [OddCrimes.Com](https://OddCrimes.Com), can be used for research. The database goes back over 10 years and I offer statistics on crime as well. Users decide whether they should click the button based on the law, 17 U.S. Code § 107 - Limitations on exclusive rights: Fair use. https://www.law.cornell.edu/uscode/text/17/107. The service is offered in good faith.
->
-
 
 ##Prerequisites:
   * Web server [virtual machine #1]
