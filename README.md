@@ -20,7 +20,7 @@ When the user presses the button, the request is placed in the database. Virtual
 
 The image is saved on a virtual drive accessible by the webserver and a webpage that displays the full sized image is created.  If the user clicks on the embedded image, it will take then to the full size image page. It then deletes the databases record.
 
-##Advantages of doing it this way:
+## Advantages of doing it this way:
  * The process cannot be interupted by the user, meaning that they can leave the page once the button is clicked and the process will complete.
  * Using the database to establish a queue so that only one chrome process is used, keeping resources used at a minimum.
  * The image is permanent, so it is accessed quicker the second time around.
