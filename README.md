@@ -25,3 +25,7 @@ The image is saved on a virtual drive accessible by the webserver and a webpage 
  * Using the database to establish a queue so that only one chrome process is used, keeping resources used at a minimum.
  * The image is permanent, so it is accessed quicker the second time around.
  * Only the news item people are interested in are saved, limiting storage to only those images.
+
+## Resources
+* [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome?hl=cat)
+* Check out sharing folder between virtual hosts for the type of VM you are using.
