@@ -14,11 +14,12 @@ Prerequisites:
   * Web server [virtual machine #1]
   * Database server [virtual machine #2]
   * Shared folder that both virtual machines can access.
->
->When the user presses the button, the request is placed in the database. Virtual machine #2 monitors the databases every minute. When it sees a new entry, it takes the id number and gets the url. It uses headless chrome to go to the url and take a snapshot (pdf or html file types can be used instead of an image using the switches in the chrome command line). 
->
->The image is saved on a virtual drive accessible by the webserver and a webpage that displays the full sized image is created.  If the user clicks on the embedded image, it will take then to the full size image page. It then deletes the databases record.
->
+
+## What the user doesn't see.
+When the user presses the button, the request is placed in the database. Virtual machine #2 monitors the databases every minute. When it sees a new entry, it takes the id number and gets the url. It uses headless chrome to go to the url and take a snapshot (pdf or html file types can be used instead of an image using the switches in the chrome command line). 
+
+The image is saved on a virtual drive accessible by the webserver and a webpage that displays the full sized image is created.  If the user clicks on the embedded image, it will take then to the full size image page. It then deletes the databases record.
+
 ##Advantages of doing it this way:
  * The process cannot be interupted by the user, meaning that they can leave the page once the button is clicked and the process will complete.
  * Using the database to establish a queue so that only one chrome process is used, keeping resources used at a minimum.
