@@ -1,6 +1,6 @@
 <?php
   //Running this on backend server and looping it on interval.
-  include 'C:\inetpub\wwwroot\cgi2\bits\mysql_pconnect.php';
+  include 'C:\file\path\mysql_pconnect.php';
   //get the id of the next record to process
   $query = "select id, record_id, remote_url from peeker_front order by id asc limit 1";
   $result = mysql_query($query);
@@ -14,7 +14,7 @@
   
   //take snapshot; delete from database because the id has been processed
   if ($got_record) {
-    $output_file = "Y:\\filepath\\" . $record_id . "_smaller.png";
+    $output_file = "Y:\filepath\" . $record_id . "_smaller.png";
     take_snapshot_and_save($record_id,$url);
     $query = "delete from peeker_front where id = $db_id";
     $result = mysql_query($query));
@@ -23,8 +23,8 @@
    
   function take_snapshot_and_save($this_record_id,$thisurl) {
     $quality = 50;
-    $image_output_filename = "Y:\\filepath\\" . $this_record_id . ".png";
-    $image_output_filename_smaller = "Y:\\filepath\\" . $this_record_id . "_smaller.png";
+    $image_output_filename = "Y:\filepath\" . $this_record_id . ".png";
+    $image_output_filename_smaller = "Y:\filepath\" . $this_record_id . "_smaller.png";
 
     $agent = "Mozilla/5.0+(Windows+NT+6.3;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/76.0.3809.100+Safari/537.36";
     $command = '"chrome" --headless --incognito --aggressive-cache-discard --user-agent="' . $agent . '" --window-size=1242,2646 --screenshot="' . $image_output_filename_smaller . '" ' . $thisurl;
