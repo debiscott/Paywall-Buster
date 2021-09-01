@@ -1,15 +1,12 @@
 ## Paywall Buster: Using headless Chrome command line within PHP to display embedded image of remote website using JavaScript.
 
-The Paywall Buster uses headless chrome and javascript to embed an image of a remote site in the webpage one is viewing. An example is to visit [@pulpnews](http://twitter.com/pulpnews), and click on any of the tweets. This takes you to a dynamic page at oddcrimes.com. The dynamic page presents a button to take a snapshot of the website in real time and to display the image of it on the same webpage without the paywall blocker. Most the snapshot will 
-
-
-see the website. If the user encounters a paywall when using a link, then they can press a button and get the remote website's image embedded on the page which the can further click on to display it at maximum size.
+The Paywall Buster uses headless chrome and javascript to embed an image of a remote site in the webpage one is viewing. An example is to visit [@pulpnews](http://twitter.com/pulpnews), and click on any of the tweets. This takes you to a dynamic page at oddcrimes.com. The dynamic page presents a button to take a snapshot of the remote website in real time and to display the image of it on the same webpage without the presence of a paywall blocker.
 
 >It looks like this: 
 >![OddCrimes Crime News Item](https://oddcrimes.com/o/images/paywall_buster.jpg)
 
-## Is this legal?
-My site, [OddCrimes.Com](https://OddCrimes.Com), can be used for research. The database goes back over 10 years and I offer statistics on crime as well. Users decide whether they should click the button based on the law, [17 U.S. Code § 107 - Limitations on exclusive rights: Fair use](https://www.law.cornell.edu/uscode/text/17/107). 
+## The law.
+Users decide their intent based on the law, [17 U.S. Code § 107 - Limitations on exclusive rights: Fair use](https://www.law.cornell.edu/uscode/text/17/107). 
 
 ## Required Resources.
 Prerequisites:
