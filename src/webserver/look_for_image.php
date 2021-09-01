@@ -4,7 +4,7 @@
   //The batch file, if found, is executed and a web page displaying the image is created.
  
   top:
-    $directory = "X:\\file\path\\peeker_snapshots\\";
+    $directory = "X:\file\path\peeker_snapshots\";
     $files = scan_dir($directory);
     $count = 0;
     foreach ($files as $file) {
