@@ -7,7 +7,7 @@
   $start_date_all = new DateTime($start_all);
 
   //below checks to see if the image has already been generated, if so then display if not create it
-  $php_file = "X:\\file\path\\peeker_snapshots\\" . $id . ".php";
+  $php_file = "X:\file\path\peeker_snapshots\" . $id . ".php";
   $php_url = "https://oddcrimes.com/peeker_snapshots/" . $id . ".php";
 
   if (file_exists($php_file)) {
@@ -19,7 +19,7 @@
   }  
   else {
     if ($id) { //if there is no $id number then we don't show an error on purpose, so as not to give hackers a hint.
-      include 'Z:\inetpub\wwwroot\OddCrimes\o\cgi94\bits\mysql_pconnect_stories.php';
+      include 'X:\file\path\mysql_pconnect_stories.php';
       $abcquery = "select HIGH_PRIORITY url,title from stories.crimenews where id = $id";
       $abcresult = mysql_query($abcquery);
       while ($abcrow = mysql_fetch_array($abcresult)) {
@@ -45,11 +45,11 @@
   function display_remote_page($thisid,$remoteurl,$title) {
     //bbprint "just entered display_remote_page function<br>\n";
     $image_url = "https://oddcrimes.com/peeker_snapshots/" . $thisid . "_smaller.png";
-    $php_file = "X:\\file\path\\peeker_snapshots\\" . $thisid . ".php";
-    $image_file = "X:\\file\path\\peeker_snapshots\\" . $thisid . "_smaller.png";
+    $php_file = "X:\file\path\peeker_snapshots\" . $thisid . ".php";
+    $image_file = "X:\file\path\peeker_snapshots\" . $thisid . "_smaller.png";
     $php_url = "https://oddcrimes.com/peeker_snapshots/" . $thisid . ".php";
 
-    include 'X:\\file\path\\mysql_pconnect_peeker_switcher.php';
+    include 'X:\file\path\mysql_pconnect_peeker_switcher.php';
 
     $query = "insert peeker (record_id, remote_url) values ($thisid,'$remoteurl')";
     $result = mysql_query($query);
@@ -58,9 +58,9 @@
     $query = "insert peeker_front (record_id, remote_url) values ($thisid,'$filter_pdf_files')";
     $result = mysql_query($query);
 					
-    $cp_batchfile = "X:\\file\path\\peeker_snapshots\\" . $thisid . ".bat";
+    $cp_batchfile = "X:\file\path\peeker_snapshots\" . $thisid . ".bat";
     $createimagefile_handle = fopen($cp_batchfile,'w') or die("2aCan't open $cp_batchfile\n");
-    $command = "copy V:\\" . $thisid . "_smaller.png  X:\\file\path\\peeker_snapshots";
+    $command = "copy V:\" . $thisid . "_smaller.png  X:\file\path\peeker_snapshots";
     fwrite($createimagefile_handle, $command);
     fclose ($createimagefile_handle); 
     
@@ -80,7 +80,7 @@
     $createimagefile_handle = fopen($php_file,'w');
     fwrite($createimagefile_handle, $htmlstuff);
     fclose ($createimagefile_handle); 
-    $image_file = "X:\\file\path\\peeker_snapshots\\" . $thisid . "_smaller.png";
+    $image_file = "X:\file\path\peeker_snapshots\" . $thisid . "_smaller.png";
 
     $luminance = get_avg_luminance($image_file,10);   
    
