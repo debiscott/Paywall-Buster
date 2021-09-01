@@ -12,7 +12,7 @@ My site, [OddCrimes.Com](https://OddCrimes.Com), can be used for research. The d
 Prerequisites:
   * Web server [virtual machine #1]
   * Backend server [virtual machine #2]
-  * Database [this uses MySQL 5.5, but any database can be used]
+  * Database [this uses MySQL 5.5, but most databases can be used]
   * Shared folder that both virtual machines can access.
 
 ## What the user doesn't see.
