@@ -3,7 +3,7 @@
 The Paywall Buster uses headless chrome and javascript to embed an image of a remote site in the webpage one is viewing. An example is to visit [@pulpnews](http://twitter.com/pulpnews), and click on any of the tweets. This takes you to a dynamic page at oddcrimes.com. The dynamic page presents a button to take a snapshot of the remote website in real time and to display the image of it on the same webpage without the presence of a paywall blocker.
 
 >It looks like this: 
->![OddCrimes Crime News Item](https://oddcrimes.com/o/images/paywall_buster1.jpg)
+>![OddCrimes Crime News Item](https://oddcrimes.com/o/images/paywall_buster.jpg)
 
 ## The law.
 Users decide their intent based on the law, [17 U.S. Code § 107 - Limitations on exclusive rights: Fair use](https://www.law.cornell.edu/uscode/text/17/107). 
